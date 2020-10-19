@@ -1,0 +1,27 @@
+.LoginBox{
+    width:70px;
+    height:40px;
+
+    padding-left:10px;
+    padding-right:10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color:rgba(0, 0, 0, 0.48);
+    border-radius:5px;
+
+    cursor:pointer;
+}
+
+.LoginBox > img{
+    width:15px;
+    height:15px;
+}
+
+.LoginBox > h2{
+    margin-left:10px;
+    font-size:14px;
+    color: rgba(255, 255, 255, 0.75);
+}

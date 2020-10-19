@@ -1,0 +1,45 @@
+.Main{
+    width:100vw;
+    height:100vh;
+
+    display: flex;
+}
+
+.Main > .text-box{
+    width:50%;
+    height:100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Main > .text-box > .text-content{
+    color:#fff;
+    margin-bottom:100px;
+}
+
+.Main > .text-box > .text-content > h2{
+    width:80%;
+    margin:auto;
+
+    font-size:100px;
+    line-height:110px;
+    margin-bottom:40px;
+}
+
+.Main > .text-box > .text-content > p{
+    width:80%;
+    margin:auto;
+    
+    font-size:16px;
+    color: #BDBDBD;
+
+}
+
+.Main > .image-box{
+    width:50%;
+    height:100%;
+    background-image:url('../../../../resource/main_background.svg');
+    background-size:cover;
+}
