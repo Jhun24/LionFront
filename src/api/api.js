@@ -15,5 +15,12 @@ export default{
             method:'get',
             url:'/user/data/'+userToken
         })
+    },
+    qr(data){
+        return axios({
+            method:'post',
+            url:'/user/recycle',
+            data:data
+        })
     }
 }

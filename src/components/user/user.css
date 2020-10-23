@@ -21,9 +21,11 @@
     font-size:40px;
     font-weight:600;
     color:#fff;
-    line-height:200px;
+    line-height:40px;
     width:400px;
     margin:auto;
+    margin-top:20px;
+    margin-bottom:20px;
 }
 
 .User > .user-box > div{
@@ -44,7 +46,7 @@
 }
 
 .User > .user-box > .user-qrcode{
-    margin-top:50px;
+    margin-top:30px;
 }
 
 .User > .user-box > a{
@@ -64,5 +66,5 @@
     cursor:pointer;
 
     margin:auto;
-    margin-top:40px;
+    margin-top:30px;
 }
