@@ -1,6 +1,7 @@
 import React , {Component} from 'react'
 
 import LoginBox from './component/login/login';
+import MypageBox from './component/mypage/mypage'
 
 import logo from './resource/Union.svg'
 import './header.css'
@@ -9,11 +10,19 @@ class Header extends Component{
     constructor(props){
         super(props);
         this.state = {
-            isAuth:false
+            userToken:String,
         }
     }
+   
     render(){
-        return(
+        let button;
+        if(window.sessionStorage.getItem('isAuth') == "true"){
+            button=<MypageBox></MypageBox>
+        }  
+        else{
+            button=<LoginBox></LoginBox>;
+        }
+        return( 
             <div className="header">
                 <div className="header-box">
                     <div className="logo-box">
@@ -27,7 +36,7 @@ class Header extends Component{
                     </div>
                 </div>
                 <div className="button-box">
-                   <LoginBox/>
+                    {button}
                 </div>
             </div>
         );

@@ -1,0 +1,68 @@
+.User{
+    width:100vw;
+    height:100vh;
+    display: flex;
+
+}
+
+.User > .user-box{
+    width:50%;
+    height:100%;
+}
+
+.User > .img{
+    background-image: url('../../resource/main_background.svg');
+    background-size:cover;
+    width:50%;
+    height:100%;
+}
+
+.User > .user-box > h2{
+    font-size:40px;
+    font-weight:600;
+    color:#fff;
+    line-height:200px;
+    width:400px;
+    margin:auto;
+}
+
+.User > .user-box > div{
+    width:400px;
+    height:auto;
+    margin:auto;
+    text-align:left;
+    color:#fff;
+}
+
+.User > .user-box > div > p{
+    font-size:80px;
+    font-weight:800;
+}
+
+.User > .user-box > div > p > span{
+    font-size:40px;
+}
+
+.User > .user-box > .user-qrcode{
+    margin-top:50px;
+}
+
+.User > .user-box > a{
+    text-decoration: none;
+}
+
+.User > .user-box > a > .back-btn{
+    width:400px;
+    height:40px;
+    border:1px solid #fff;
+    color:#fff;
+    border-radius:5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+
+    margin:auto;
+    margin-top:40px;
+}

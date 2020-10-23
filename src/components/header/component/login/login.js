@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom'
 
 import loginImg from './resource/login.svg'
 import './login.css'
@@ -9,10 +10,12 @@ class LoginBox extends Component{
     }
     render(){
         return(
-            <div className="LoginBox">
-                <img src={loginImg}/>
-                <h2>로그인</h2>
-            </div>
+            <Link to="/auth">
+                <div className="LoginBox">
+                    <img src={loginImg}/>
+                    <h2>로그인</h2>
+                </div>
+            </Link>  
         );
     }
 }
