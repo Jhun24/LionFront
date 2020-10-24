@@ -16,10 +16,13 @@ class QR extends Component{
         if (data) {
             if(this.state.scanTime == 0){
                 this.setState({result: data});
-                this.setState({scanTime:1});
+              
                 let apiData = await api.qr({
                     userToken:this.state.result
-                })
+                });
+                if(apiData.status == 200){
+                    alert("인증되었습니다.")
+                }
             }
         }
     }
