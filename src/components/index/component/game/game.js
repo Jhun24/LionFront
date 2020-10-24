@@ -9,7 +9,8 @@ class Game extends Component{
     constructor(props){
         super(props);
     }
-    componentDidMount(){
+  
+    render(){
         let gameDisplay;
         if(window.sessionStorage.getItem('isAuth') == "true"){
             gameDisplay=<Content></Content>
@@ -17,8 +18,6 @@ class Game extends Component{
         else{
             gameDisplay=<Text></Text>;
         }
-    }
-    render(){
         return(
             <div className="Game">
                 <h2>재활용 게임</h2>
