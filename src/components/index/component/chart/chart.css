@@ -46,9 +46,19 @@
      height:100%;
 
      border-radius:5px;
-     background-color:#fff;
-    color:#fff;
-     /* color:#141414; */
+  
+     color:#fff;
 
-     margin-top:60px;
+     margin-top:100px;
+     
+}
+
+.Chart > .text-box > .graph-box > div > h2{
+    font-size:40px;
+    text-align: right;
+}
+
+.Chart > .text-box > .graph-box > div > p{
+    text-align: right;
+    font-size:30px;
 }
