@@ -10,6 +10,16 @@ class MypageBox extends Component{
     constructor(props){
         super(props);
     }
+
+    moveMap(){
+        document.location.href="http://www.superbin.co.kr/new/contents/location_list.php?skey=&sval=&pg=1"
+    }
+    logout(){
+        window.sessionStorage.setItem('isAuth',false);
+        window.sessionStorage.setItem('userToken',null);
+        document.location.href = '/'
+    }
+
     render(){
         return(
             <div className="Mypage">
@@ -20,11 +30,11 @@ class MypageBox extends Component{
                             <h2>마이페이지</h2>
                         </div>
                     </Link>
-                    <div className="map-button">
+                    <div className="map-button" onClick={this.moveMap}>
                         <img src={mapImg}/>
                         <h2>수거 지도</h2>
                     </div>
-                    <div className="logout-button">
+                    <div className="logout-button" onClick={this.logout}>
                         <img src={logoutImg}/>
                         <h2>로그아웃</h2>
                     </div>
