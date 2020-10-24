@@ -9,7 +9,9 @@ class Mean extends Component{
     render(){
         return(
             <div className="Mean">
-
+                <div className="content">
+                        
+                </div>
             </div>
         );
     }
