@@ -60,5 +60,10 @@
 
 .Chart > .text-box > .graph-box > div > p{
     text-align: right;
+    font-size:60px;
+}
+
+.Chart > .text-box > .graph-box > div > p > span{
+    text-align: right;
     font-size:30px;
 }

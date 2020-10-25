@@ -32,7 +32,7 @@ class MypageBox extends Component{
                     </Link>
                     <div className="map-button" onClick={this.moveMap}>
                         <img src={mapImg}/>
-                        <h2>수거 지도</h2>
+                        <h2>수거 위치</h2>
                     </div>
                     <div className="logout-button" onClick={this.logout}>
                         <img src={logoutImg}/>

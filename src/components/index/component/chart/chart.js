@@ -15,12 +15,12 @@ class Chart extends Component{
                     <div className="graph-box">
                         <div className="people-box">
                             <h2>현재까지 참여 인원</h2>
-                            <p>{10}명</p>
+                            <p>{10}<span>명</span></p>
                         </div>
 
                         <div className="bottle-box">
                             <h2>현재까지 재활용 된 병</h2>
-                            <p>{100}병</p>
+                            <p>{100}<span>병</span></p>
                         </div>
                     </div>
                 </div>

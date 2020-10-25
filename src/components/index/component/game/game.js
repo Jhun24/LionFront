@@ -21,7 +21,7 @@ class Game extends Component{
         return(
             <div className="Game">
                 <h2>재활용 게임</h2>
-                <p>무덤 별 계절이 무성할 봅니다. 그러나 강아지, 차 이런 헤일 나의 딴은 언덕 까닭입니다. 지나고 못 이국 이런 당신은 하나에 라이너 거외다. 노새, 하나에 이국 남은 불러 헤는 거외다. </p>
+                <p>재활용 게임을 통해 자세한 재활용 방법을 알아보세요!</p>
                 <div className="game-content">
                     {gameDisplay}
                 </div>

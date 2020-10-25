@@ -19,6 +19,12 @@
     text-align: center;
 }
 
+.Login > .login-box > p{
+    color:#fff;
+    font-size:12px;
+    text-align: right;
+}
+
 .Login > .login-box > input{
     width:380px;
     height:40px;

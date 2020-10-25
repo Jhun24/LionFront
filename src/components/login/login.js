@@ -34,6 +34,8 @@ class Login extends Component{
                     <input type="password" name="password" onChange={this.handleChange} placeholder="비밀번호를 입력해주세요"/>
                     
                     <div className="login-btn" onClick={this.handleSubmit}>로그인</div>
+
+                    <p>test계정을 사용해주세요. ID : test PS : 1234</p>
                 </div>
             </div>
         );
