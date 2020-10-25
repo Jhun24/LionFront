@@ -29,7 +29,7 @@ const Content = props => {
 
         
         //타이틀 버튼 구현
-        const [buttonSrc,setButtonSrc] = useState('./resources/pages/main/startButton.png');
+        const [buttonSrc,setButtonSrc] = useState('./content/resource/pages/main/startButton.png');
 
          //아이템들 정보
          const [items,setitems] = useState(
@@ -106,7 +106,7 @@ const Content = props => {
     
     //메인 배경 이미지 그리기
     let mainbackg = new Image();
-    mainbackg.src = './resources/pages/main/mainbackg.jpg';
+    mainbackg.src = './content/resource/pages/main/mainbackg.jpg';
     ctx. drawImage( mainbackg, 0,0, cWidth ,cHeight );
 
     if (nowPage == 'main'){
@@ -125,12 +125,12 @@ const Content = props => {
   const mainPage = (ctx) => {
     //로고 그리기
     let mainlogo = new Image();
-    mainlogo.src = './resources/pages/main/mainlogo.png';
+    mainlogo.src = './content/resource/pages/main/mainlogo.png';
     ctx. drawImage( mainlogo, 0,0, cWidth ,cHeight );
 
     //게임 설명
     let subtitle = new Image();
-    subtitle.src = './resources/pages/main/subtitle.png';
+    subtitle.src = './content/resource/pages/main/subtitle.png';
     ctx. drawImage( subtitle, 0,0, cWidth ,cHeight );
 
     
@@ -144,12 +144,12 @@ const Content = props => {
         //277 372
         //549 412
         if( e.layerX > 281 && e.layerX < 544 && e.layerY<411 && e.layerY >370){
-            setButtonSrc('./resources/pages/main/clickedButton.png');
+            setButtonSrc('./content/resource/pages/main/clickedButton.png');
         }
       }
     canvas.onmouseup = ( e ) => {
-        if(buttonSrc == './resources/pages/main/clickedButton.png'){
-            setButtonSrc('./resources/pages/main/startButton.png');
+        if(buttonSrc == './content/resource/pages/main/clickedButton.png'){
+            setButtonSrc('./content/resource/pages/main/startButton.png');
             setnowPage('game');
         }
     }
@@ -176,7 +176,7 @@ const Content = props => {
 
     //분류 창
     let core = new Image();
-    core.src = './resources/pages/game/gameCore.png';
+    core.src = './content/resource/pages/game/gameCore.png';
     ctx. drawImage( core, 0,0, cWidth ,cHeight );
 
     
@@ -185,7 +185,7 @@ const Content = props => {
     //118,228
     if(!items_tmp[0].success){
       let past = new Image();
-      past.src = './resources/pages/game/things/파스퇴르.png';
+      past.src = './content/resource/pages/game/things/파스퇴르.png';
       ctx. drawImage( past, items_tmp[0].current[0],items_tmp[0].current[1], cWidth ,cHeight );
     }
 
@@ -195,7 +195,7 @@ const Content = props => {
     //203 , 234
     if(!items_tmp[1].success){
       let icis = new Image();
-      icis.src = './resources/pages/game/things/아이시스.png';
+      icis.src = './content/resource/pages/game/things/아이시스.png';
       ctx. drawImage( icis, items_tmp[1].current[0],items_tmp[1].current[1], cWidth ,cHeight );
     }
 
@@ -206,7 +206,7 @@ const Content = props => {
     
     if(!items_tmp[2].success){
       let dduck = new Image();
-      dduck.src = './resources/pages/game/things/떡볶이.png';
+      dduck.src = './content/resource/pages/game/things/떡볶이.png';
       ctx. drawImage( dduck, items_tmp[2].current[0],items_tmp[2].current[1], cWidth ,cHeight );
     }
 
@@ -217,7 +217,7 @@ const Content = props => {
     
     if(!items_tmp[3].success){
       let xi = new Image();
-      xi.src = './resources/pages/game/things/자일리톨.png';
+      xi.src = './content/resource/pages/game/things/자일리톨.png';
       ctx. drawImage( xi, items_tmp[3].current[0],items_tmp[3].current[1], cWidth ,cHeight );
     }
     //자껍
@@ -226,7 +226,7 @@ const Content = props => {
     
     if(!items_tmp[4].success){
       let xi_g = new Image();
-      xi_g.src = './resources/pages/game/things/자껍.png';
+      xi_g.src = './content/resource/pages/game/things/자껍.png';
       ctx. drawImage( xi_g, items_tmp[4].current[0],items_tmp[4].current[1], cWidth ,cHeight );
     }
 
@@ -237,7 +237,7 @@ const Content = props => {
     
     if(!items_tmp[5].success){
       let drug = new Image();
-      drug.src = './resources/pages/game/things/알약.png';
+      drug.src = './content/resource/pages/game/things/알약.png';
       ctx. drawImage(drug, items_tmp[5].current[0],items_tmp[5].current[1], cWidth ,cHeight );
     }
 
@@ -248,7 +248,7 @@ const Content = props => {
     
     if(!items_tmp[6].success){
       let water = new Image();
-      water.src = './resources/pages/game/things/좋은물.png';
+      water.src = './content/resource/pages/game/things/좋은물.png';
       ctx. drawImage(water, items_tmp[6].current[0],items_tmp[6].current[1], cWidth ,cHeight );
     }
 
@@ -354,7 +354,7 @@ const Content = props => {
 
     ]
     let descBackg = new Image();
-    descBackg.src = './resources/pages/description/'+descItems[descNum];
+    descBackg.src = './content/resource/pages/description/'+descItems[descNum];
     ctx. drawImage( descBackg, 0,0, cWidth ,cHeight );
     
     const canvas = canvasRef.current
@@ -370,7 +370,7 @@ const Content = props => {
   }
   const successPage = (ctx) =>{
     let successBackg = new Image();
-    successBackg.src = './resources/pages/success/success.png';
+    successBackg.src = './content/resource/pages/success/success.png';
     ctx. drawImage( successBackg, 0,0, cWidth ,cHeight );
   }
   useEffect(() => {
