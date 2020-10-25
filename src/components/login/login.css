@@ -20,9 +20,10 @@
 }
 
 .Login > .login-box > p{
-    color:#fff;
+    color:rgba(255,255,255,0.74);
     font-size:12px;
     text-align: right;
+    margin-top:20px;
 }
 
 .Login > .login-box > input{
