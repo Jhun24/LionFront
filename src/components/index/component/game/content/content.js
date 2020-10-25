@@ -344,13 +344,13 @@ const Content = props => {
 
   const descriptionPage = (ctx) => {
     let descItems = [
-      'milkExp.png',
-      'waterExp.png',
-      'riceExp.png',
-      'gumExp.png',
-      'jaExp.png',
-      'medExp.png',
-      'goodExp.png',
+      'milkExp.PNG',
+      'waterExp.PNG',
+      'riceExp.PNG',
+      'gumExp.PNG',
+      'jaExp.PNG',
+      'medExp.PNG',
+      'goodExp.PNG',
 
     ]
     let descBackg = new Image();
