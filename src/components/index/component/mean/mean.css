@@ -3,4 +3,57 @@
     height:100vh;
     background-image:url('./resource/Background.svg');
     background-size:cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Mean > .content{
+    width:1000px;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Mean > .content > div{
+    width:46%;
+    height:70%;
+}
+
+.Mean > .content > .mean-title > h2{
+    color:#Fff;
+    font-size:50px;
+}
+
+.Mean > .content > .mean-title > p{
+    color:rgba(255,255,255,0.74);
+    margin-top:20px;
+    font-size:14px;
+}
+
+.Mean > .content > .mean-data{
+    background-color: #fff;
+
+    color:#141414;
+}
+
+.Mean > .content > .mean-data > img{
+    margin-left:30px;
+    margin-top:50px;
+}
+
+.Mean > .content > .mean-data > h2{
+    font-size:40px;
+    font-weight:800;
+    margin-left:30px;
+    margin-top:20px;
+}
+
+.Mean > .content > .mean-data > p{
+    width:calc(100% - 60px);
+    margin-left:30px;
+    margin-top:10px;   
+    font-size:16px;
 }

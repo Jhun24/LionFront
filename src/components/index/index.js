@@ -7,6 +7,7 @@ import Header from '../header/header';
 import Main from './component/main/main';
 import Chart from './component/chart/chart';
 import Game from './component/game/game';
+import Mean from './component/mean/mean'
 
 class Index extends Component{
     constructor(props){
@@ -27,6 +28,7 @@ class Index extends Component{
                 <Main></Main>
                 <Chart></Chart>
                 <Game></Game>
+                <Mean></Mean>
             </div>
         );
     }

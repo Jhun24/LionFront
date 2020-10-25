@@ -344,13 +344,13 @@ const Content = props => {
 
   const descriptionPage = (ctx) => {
     let descItems = [
-      '파스퇴르_설명.png',
-      '아이시스_설명.png',
-      '떡볶이_설명.png',
-      '자일리톨_설명.png',
-      '자껍_설명.png',
-      '알약_설명.png',
-      '좋은물_설명.png',
+      'milkExp.png',
+      'waterExp.png',
+      'riceExp.png',
+      'gumExp.png',
+      'jaExp.png',
+      'medExp.png',
+      'goodExp.png',
 
     ]
     let descBackg = new Image();
